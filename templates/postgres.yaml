@@ -11,6 +11,6 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: .
+    path: templates
     repoURL: https://github.com/helm/charts/tree/master/stable/postgresql
     targetRevision: HEAD
