@@ -11,13 +11,13 @@ spec:
     namespace: apps
     server: {{ .Values.spec.destination.server }}
   project: default
-  wordpress:
-    wordpressPassword: foo
-    mariadb:
-      db:
-        password: bar
-      rootUser:
-        password: baz
+wordpress:
+  wordpressPassword: foo
+  mariadb:
+    db:
+      password: bar
+    rootUser:
+      password: baz
 dependencies:
 - name: wordpress
   version: 5.0.2
